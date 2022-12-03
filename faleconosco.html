@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="móveis, loja, escritório">
+
+    <title>CS Dias</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4acddd13b5.js" crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links_access">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+            <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
+            <li><a href="javascript:void(0);" id="diminui">A-</a></li>
+        </ul>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <header>
+        <div id="logo">
+            <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
+            </div>
+    
+            <form class="search_bar" action="#" method="post">
+                <button type="submit" class="button-style".button-style><i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i></button>
+                <label for="search_bar"></label>
+                <input type="text" name="search_bar" id="search_bar" placeholder="Buscar produto">
+            </form>
+    
+            <div class="user_icons">
+                <a href="login.html">
+                    <div class="border">
+                        <a href="/Login.html"><i class="fa-regular fa-user" title="Login"></i></a>
+                        <span>Login</span>
+                    </div>
+                </a>
+                <div class="noborder">
+                    <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+                </div>
+            </div>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li class="produtos-list"><a href="produtos.html">Produtos</a>
+                <ul>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Apoio para pés</a></li>
+                    <li><a href="">Armários</a></li>
+                    <li><a href="">Arquivos e fichários</a></li>
+                    <li><a href="">Baias</a></li>
+                    <li><a href="">Balcão</a></li>
+                    <li><a href="">Biombos</a></li>
+                    <li><a href="">Carteiras</a></li>
+                    <li><a href="">Cadeiras</a></li>
+                    <li><a href="">Cofres</a></li>
+                    <li><a href="">Divisórias</a></li>
+                    <li><a href="">Estantes</a></li>
+                    <li><a href="">Ferramenteiro</a></li>
+                    <li><a href="">Mesas</a></li>
+                    <li><a href="">Longarina</a></li>
+                    <li><a href="">Rack</a></li>
+                    <li><a href="">Roupeiro</a></li>
+                    <li><a href="">Plataformas de trabalho</a></li>
+                    <li><a href="">Poltronas</a></li>
+                    <li><a href="">Sofá</a></li>
+                    <li><a href="">Sofanete</a></li>
+                    <li><a href="">Suporte para CPU</a></li>
+                </ul>
+            </li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+<main id="conteudo">
+    <section class="contactus content">
+    <h1>Fale conosco</h1>
+    <form>
+        <label for="email" class="star">E-mail</label>
+        <br>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="tel" class="star">Telefone</label>
+        <br>
+        <input type="tel" name="tel" id="tel" required>
+        <br>
+        <label for="assunto" class="star">Assunto</label>
+        <br>
+        <select name="assunto" id="assunto" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="duvidas">Dúvidas</option>
+            <option value="orcamentos">Orçamentos</option>
+            <option value="reclamacoes">Reclamações</option>
+            <option value="sugestoes">Sugestões</option>
+        </select>
+        <br>
+        <label for="mensagem" class="star">Mensagem</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+ </main>
+    <footer id="rodape">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+        </ul>
+        <div class="social_links">
+            <p>Siga nas redes sociais</p>
+            <i class="fa-brands fa-instagram" title="Instagram"></i>
+        </div>
+        <ul>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="">Mapa do site</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/contraste.js"></script>
+    <script src="js/fonte.js"></script>
+
+</body>
+
+</html>

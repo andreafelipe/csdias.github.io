@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="móveis, loja, escritório">
+
+    <title>CS Dias</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4acddd13b5.js" crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+   <div class="login"></div>
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links_access">
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+            <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+            <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
+            <li><a href="javascript:void(0);" id="diminui">A-</a></li>
+        </ul>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>  
+    </div>
+
+    <header>
+        <a href="/index.html"><img src="imagens/logo.png" alt="Logo CS Dias" title="Ir para página inicial"></a>
+        
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass" title="Pesquisar"></i>
+            <label for="search_bar"></label>
+            <input type="text" name="search_bar" id="search_bar" placeholder="Buscar produto">
+        </div>
+
+        <div class="user_icons">
+            <i class="fa-regular fa-user" title="Login"></i>
+            <i class="fa-solid fa-cart-shopping" title="Carrinho"></i>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="">Início</a></li>
+            <li class="produtos-list"><a href="">Produtos</a>
+                <ul>
+                    <li><a href="">Acessórios</a></li>
+                    <li><a href="">Apoio para pés</a></li>
+                    <li><a href="">Armários</a></li>
+                    <li><a href="">Arquivos e fichários</a></li>
+                    <li><a href="">Baias</a></li>
+                    <li><a href="">Balcão</a></li>
+                    <li><a href="">Biombos</a></li>
+                    <li><a href="">Carteiras</a></li>
+                    <li><a href="">Cadeiras</a></li>
+                    <li><a href="">Cofres</a></li>
+                    <li><a href="">Divisórias</a></li>
+                    <li><a href="">Estantes</a></li>
+                    <li><a href="">Ferramenteiro</a></li>
+                    <li><a href="">Mesas</a></li>
+                    <li><a href="">Longarina</a></li>
+                    <li><a href="">Rack</a></li>
+                    <li><a href="">Roupeiro</a></li>
+                    <li><a href="">Plataformas de trabalho</a></li>
+                    <li><a href="">Poltronas</a></li>
+                    <li><a href="">Sofá</a></li>
+                    <li><a href="">Sofanete</a></li>
+                    <li><a href="">Suporte para CPU</a></li>  
+                </ul>
+            </li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+      
+    <p>Página inicial > Produtos > Cadeiras > Cadeiras executivas</p>
+   
+    <p>Cadeira Executiva giratória - Tecido vermelho sem braço</p>
+    <img src="imagens/cadeiraexecutiva.jpg" alt="imagem indisponível">
+
+   
+
+    <p>Descrição do produto</p>
+    <p>Cadeira executiva giratória</p>
+    <p>Marca: StiloFlex</p>
+
+    <p>Estoque: Disponível</p>
+    <p>Quantidade</p> <select name="Quantidade" id="Quantidade" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="Compra">Adicionar ao carrinho</button>
+
+    <p>Materiais: Assento e encosto com base em multi-laminado, revestidos com espuma injetada de poliuretano de alta qualidade moldada com densidade controlada, e revestimento em tecido JSerrano. Base giratória em aço com acabamento em polipropileno. Pistão a gás com regulagem de altura e mecanismo back system.</p>
+    
+    <b>Dimensões</b>
+    <p>Assento: Largura 46 x Comprimento 44cm</p>
+    <p> Encosto: Largura 41 x Altura 37 cm </p>
+    <p> Altura total: mínima 83 cm / máxima 96 </p>
+    <p> Largura total: 59 cm </p>
+    <p> Peso: 9,560 Kg </p>
+
+
+    <footer id="rodape">
+        <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">Fale Conosco</a></li>
+        </ul>
+        <div class="social_links">
+            <p>Siga nas redes sociais</p>
+            <i class="fa-brands fa-instagram" title="Instagram"></i>
+        </div>
+        <ul>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="">Mapa do site</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/contraste.js"></script>
+    <script src="js/fonte.js"></script>
+
+</body>
+
+</html>
